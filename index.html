@@ -203,5 +203,18 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <p><strong>Ejemplo 4:</strong> Generar un código con una URL.</p>
+	<form action="generate-url.php" method="post" target="qrcodeuri">
+		<fieldset>
+			<label for="uri">URL a incluir en el QR:</label>
+			<input type="url" value="" placeholder="Escribe aquí la URL" id="uri" name="uri" required />
+			<hr />
+			<input type="submit" value="Generar QR">
+		</fieldset>
+	</form>
+	<iframe id="qrcodeuri" name="qrcodeuri" src="generate-url.php?uri=https:%2F%2Fyoutube.com%2Fuser%2Funderdog1987%2F" width="250" height="250" frameborder="0"></iframe>
+
+	<p><strong>Ejemplo 5:</strong> Generar una tarjeta de contacto</p>
+	<input type="button" value="Ir al formulario para generar tarjeta de contacto" onclick="window.location.href='formvcard.php';" />
     </body>
 </html>

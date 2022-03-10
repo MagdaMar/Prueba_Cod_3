@@ -206,12 +206,11 @@
 	<form action="generate-url.php" method="post" target="qrcodeuri">
 		<fieldset>
 			<label for="uri">URL a incluir en el QR:</label>
-			<input type="url" value="" placeholder="Escribe aquí la URL" id="uri" name="uri" required />
+			<input type="url" value="" placeholder="https://magdamar.github.io/Prueba_Cod_3/" id="uri" name="uri" required />
 			<hr />
 			<input type="submit" value="Generar QR">
 		</fieldset>
 	</form>
-	<iframe id="qrcodeuri" name="qrcodeuri" src="https://magdamar.github.io/Prueba_Cod_3/" width="250" height="250" frameborder="0"></iframe>
-
+	<iframe id="qrcodeuri" name="qrcodeuri" src="generate-url.php?uri=https:%2F%2Fyoutube.com%2Fuser%2Funderdog1987%2F" width="250" height="250" frameborder="0"></iframe>
     </body>
 </html>
